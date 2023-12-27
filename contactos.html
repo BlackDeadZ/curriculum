@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head><script src="../curriculum/index.js"></script>
+  <head><script src="./index.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> CURRICULUM_DE_AXL </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="checkout.css" rel="stylesheet">
 
     <style>
       .bi {
@@ -33,32 +34,31 @@
   </head>
 
   <header data-bs-theme="dark">
-    <div class="collapse text-bg-dark" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <h4>Presentación</h4>
-          </div>
-          <div class="col-sm-4 offset-md-1 py-4">
-            <h4>Saber mas...</h4>
-            <ul class="list-unstyled">
-              <li><a href="index.html" class="text-white">Curriculum</a></li>
-              <li><a href="Acerca.html" class="text-white">Acerca de mi</a></li>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand"> Contacto </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"> Curriculum <span class="sr-only">(principal)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acerca.html"> Acerca de mi</a>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>-->
+        </ul>
       </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center"> 
-          <strong>Contacto</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
+    </nav>
   </header>
   
   <body>
@@ -145,7 +145,7 @@
     
       <div class="row">
         <div class="col-lg-4">
-          <img src="../curriculum/imagenes/LogoF.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <img src="imagenes/LogoF.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
           <h2 class="fw-normal">Facebook</h2>
           <p>Me puedes ocntactar a traves de mi pagina oficial de facebook.</p>
           <p><a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100009779890995"> Enviar mensaje... 
@@ -156,7 +156,7 @@
           </a></p>
         </div><!--primera imagen -->
         <div class="col-lg-4">
-          <img src="../curriculum/imagenes/LogoT.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <img src="imagenes/LogoT.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
           <h2 class="fw-normal">Twitter</h2>
           <p>Me puedes ocntactar a traves de mi pagina oficial de twitter.</p>
           <p><a class="btn btn-primary" href="https://twitter.com/DeadzBlack"> Enviar mensaje... 
@@ -167,7 +167,7 @@
           </a></p>
         </div><!-- segunda imagen -->
         <div class="col-lg-4">
-          <img src="../curriculum/imagenes/LogoI.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <img src="imagenes/LogoI.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
           <h2 class="fw-normal">Instagram</h2>
           <p>Me puedes contactar a traves de mi pagina oficial de Instagram.</p>
           <p><a class="btn btn-primary" href="https://www.instagram.com/black_dead_z/?hl=es"> Enviar mensaje... 
@@ -206,7 +206,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="../curriculum/imagenes/telegram.jpg" class="img-thumbnail" alt="...">
+        <img src="imagenes/telegram.jpg" class="img-thumbnail" alt="...">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cerrar</button>
