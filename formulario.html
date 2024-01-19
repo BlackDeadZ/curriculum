@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="checkout.css" rel="stylesheet">
     <link rel="icon" href="imagenes/Milogo.ico">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
 
     <style>
         .bd-placeholder-img {
@@ -213,7 +214,19 @@
     <!-- area de texto localidad empresa-->
                 <div class="col-5 form-check-inline">
                     <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
+                    <input class="form-control" list="lista" placeholder="Agregar o Buscar...">
+                    <datalist id="lista">
+                      <option value="Ciudad de México"></option>
+                      <option value="Monterrey"></option>
+                      <option value="Querétaro"></option>
+                      <option value="Guadalajara"></option>
+                      <option value="Mérida"></option>
+                      <option value="Puebla"></option>
+                      <option value="Acapulco"></option>
+                      <option value="Veracruz"></option>
+                      <option value="Cuernavaca"></option>
+                      <option value="Tijuana"></option>
+                    </datalist>
                 </div>
 
                 <div class="col-3 form-check-inline">
@@ -228,18 +241,17 @@
                         <option value="2">Empresa privada</option>
                         <option value="3">Empresa Gubernamental</option>
                     </select>
-                </div><br>
+                </div><br><br>
 
+                <div class="col-12">
+                  <label for="nombreemp" class="form-label">Nombre de la empresa</label>
+                  <input type="text" class="form-control" id="nombreemp" placeholder="Nombre de empresa">
+                </div><br>
+              
                 <div class="col-12">
                     <label for="direccion" class="form-label">Direccion</label>
                     <input type="text" class="form-control" id="direccion" placeholder="Direccion">
                 </div><br>
-
-                <div class="col-12">
-                    <label for="nombreemp" class="form-label">Nombre de la empresa</label>
-                    <input type="text" class="form-control" id="nombreemp" placeholder="Nombre de empresa">
-                </div><br>
-                
     <!-- area de texto largo -->
                 <div class="mb-3">
                     <label for="Textarea1" class="form-label">Nota u observaciones</label>
@@ -248,32 +260,33 @@
     <!-- area de envio -->
                 <button type="submit" class="btn btn-primary">Enviar</button>
 
+                <button type="reset" class="btn btn-danger">Restaurar</button>
+
             </div>
         </form>
       </div>
 
-        <script>
+      <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
-           'use strict'
+          'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
                 if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
+                event.preventDefault()
+                event.stopPropagation()
                 }
 
                 form.classList.add('was-validated')
-                }, false)
+              }, false)
             })
         })()
-        </script>
-
+      </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

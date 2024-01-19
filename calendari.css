@@ -1,0 +1,41 @@
+.calendar { 
+    font-family:Arial;
+    font-size:12px;
+}
+
+.calendar caption {
+    text-align:left;
+    padding:5px 10px; 
+    background-color:#003366;
+    color:#fff;
+    font-weight:bold;
+    font-size:medium;
+}
+
+.calendar caption div:nth-child(1) {
+    float:left;
+}
+
+.calendar caption div:nth-child(2) {
+    float:right;
+}
+
+.calendar caption div:nth-child(2) a {
+    cursor:pointer;
+}
+
+.calendar th {
+    background-color:#006699;
+    color:#fff;
+    width:40px;
+}
+
+.calendar td {
+    text-align:right;
+    padding:2px 5px;
+    background-color:silver;
+}
+
+.calendar .hoy {
+    background-color:red;
+}
