@@ -9,6 +9,9 @@
     <link rel="icon" href="imagenes/Milogo.ico">
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
 
+    <link rel="stylesheet" href="calendari.css">
+    <script src="calendari.js"></script>
+
     <style>
         .bd-placeholder-img {
          font-size: 1.125rem;
@@ -194,7 +197,8 @@
                     <input type="text" class="form-control" id="Apellido2">
                 </div><br><br>
     <!-- area de radio -->
-                <label for="radio" class="from-check-label">Selecciona el sexo.</label>
+                <div class="col-4">
+                  <label for="radio" class="from-check-label">Selecciona el sexo.</label>
                 <div class="from-check ">
                     <input type="radio" name="sexo" class="form-check-input" value="" id="radio1">
                     <label for="radio1" class="from-check-label">Hombre</label>
@@ -210,6 +214,7 @@
                 <div class="from-check ">
                     <input type="radio" name="sexo" class="form-check-input" value="" id="radio4">
                     <label for="radio4" class="from-check-label">Prefiero no decirlo</label>
+                </div>
                 </div><br>
     <!-- area de texto localidad empresa-->
                 <div class="col-5 form-check-inline">
@@ -252,15 +257,42 @@
                     <label for="direccion" class="form-label">Direccion</label>
                     <input type="text" class="form-control" id="direccion" placeholder="Direccion">
                 </div><br>
+    <!-- area del calendario -->
+                <div class="calendar-container col-6 mt-3">
+                  <div class="calendar-header">
+                      <span class="prev-month" onclick="changeMonth(-1)">&#8249;</span>
+                      <span id="month-year">Enero 2024</span>
+                      <span class="next-month" onclick="changeMonth(1)"> &#8250;</span>
+                  </div>
+
+                  <table class="calendar-table" id="calendar-body">
+                    <thead>
+                      <tr>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mié</th>
+                        <th>Jue</th>
+                        <th>Vie</th>
+                        <th>Sáb</th>
+                        <th>Dom</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Aquí se generará dinámicamente el contenido del calendario con JavaScript -->
+                    </tbody>
+                  </table>
+                </div>
     <!-- area de texto largo -->
                 <div class="mb-3">
                     <label for="Textarea1" class="form-label">Nota u observaciones</label>
                     <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                 </div><br>
     <!-- area de envio -->
-                <button type="submit" class="btn btn-primary">Enviar</button>
-
-                <button type="reset" class="btn btn-danger">Restaurar</button>
+                <div class="text-center">
+                  <label for="botonesenviorestar" class="form-label"></label>
+                  <button type="submit" id="botonesenviorestar" class="btn btn-primary">Enviar</button>
+                  <button type="reset" id="botonesenviorestar" class="btn btn-danger">Restaurar</button>
+                </div>
 
             </div>
         </form>
