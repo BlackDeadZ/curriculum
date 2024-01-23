@@ -215,7 +215,7 @@
                     <input type="text" class="form-control" id="Apellido2" placeholder="Tu apellido">
                 </div><br><br>
     <!-- area de radio -->
-                <div class="col-4">
+                <div class="col-6 mb-2">
                   <label for="radio" class="from-check-label">Selecciona el sexo. *</label>
                 <div class="from-check ">
                     <input type="radio" name="sexo" class="form-check-input" value="" id="radio1" required>
@@ -235,6 +235,8 @@
                 </div>
                 </div><br>
               <hr class="featurette-divider">
+    <!--segunda seccion de formulario-->
+              <h4 class="text-center ">Informacion de la empresa.</h4><br>
     <!-- area de texto localidad empresa-->
                 <div class="col-5 mb-2  form-check-inline">
                     <label for="ciudad" class="form-label">Ciudad *</label>
@@ -258,13 +260,18 @@
                     <input type="text" class="form-control" id="cp" placeholder="CP" required>
                 </div>
                 
-                <div class="col-3 mb-2">
+                <div class="col-5 mb-2 form-check-inline">
                     <label for="select1">Que tipo de empresa es *</label>
                     <select id="select1" class="form-select" required>
                         <option value="1" selected disabled>No especificada</option>
                         <option value="2">Empresa privada</option>
                         <option value="3">Empresa Gubernamental</option>
                     </select>
+                </div>
+
+                <div class="col-4 form-check-inline"><!-- area del calendario -->
+                  <label for="fechaactual1" class="form-label">Fecha de visita. *</label>
+                  <input type="date" class="form-control" id="fechaacutal1" required>
                 </div>
 
                 <div class="col-12">
@@ -276,11 +283,6 @@
                     <label for="direccion" class="form-label">Direccion *</label>
                     <input type="text" class="form-control" id="direccion" placeholder="Direccion" required>
                 </div><br>    
-    <!-- area del calendario -->
-               <div class="col-3">
-                  <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-                  <input type="date" class="form-control" id="fechaNacimiento">
-              </div>
     <!-- area de texto largo -->
                 <div class="mb-3">
                     <label for="Textarea1" class="form-label">Algo que te gustaria agregar.</label>
@@ -290,7 +292,7 @@
                 <div class="text-center">
                   <label for="botonesenviorestar" class="form-label"></label>
                   <button type="submit" id="botonesenviorestar" class="btn btn-primary">Enviar</button>
-                  <button type="reset" id="botonesenviorestar" class="btn btn-danger">Restaurar</button>
+                  <button type="reset" id="botonesenvioresta r" class="btn btn-danger">Restaurar</button>
                 </div>
 
             </div>
@@ -299,9 +301,16 @@
 
       <br><br>
 
-
       <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        // Función para establecer la fecha y hora actual en el campo de fecha de nacimiento
+        function establecerFechaActual() {
+          var fechaActual = new Date();
+          var fechaActualFormateada = fechaActual.toISOString().slice(0, 16); // Formato YYYY-MM-DDTHH:mm
+          $("#fechaactual1").val(fechaActualFormateada);
+        }
+      </script>
+      <script>
+        // funcion para la validacion del formulario 
         (() => {
           'use strict'
 
