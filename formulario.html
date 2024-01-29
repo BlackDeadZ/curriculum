@@ -290,9 +290,10 @@
                 </div><br>
     <!-- area de envio -->
                 <div class="text-center">
-                  <label for="botonesenviorestar" class="form-label"></label>
-                  <button type="submit" id="botonesenviorestar" class="btn btn-primary">Enviar</button>
-                  <button type="reset" id="botonesenvioresta r" class="btn btn-danger">Restaurar</button>
+                  <label for="enviar" class="form-label"></label>
+                  <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+                  <label for="borrarcontenido" class="form-label"></label>
+                  <button type="reset" id="borrarcontenido" class="btn btn-danger">Restaurar</button>
                 </div>
 
             </div>
@@ -300,7 +301,8 @@
       </div>
 
       <br><br>
-
+      
+      <!--formato de la fecha-->
       <script>
         // Función para establecer la fecha y hora actual en el campo de fecha de nacimiento
         function establecerFechaActual() {
@@ -309,6 +311,8 @@
           $("#fechaactual1").val(fechaActualFormateada);
         }
       </script>
+
+      <!--esta es la validacion de la pagina-->
       <script>
         // funcion para la validacion del formulario 
         (() => {
