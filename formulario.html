@@ -185,28 +185,23 @@
             <div class="col">
     <!-- area de correo electronico -->
                 <div class="col-12 mb-2">
-                    <label for="area de correo" class="form-label">Correo electronico *</label>
+                    <label for="area de correo" class="form-label">Correo electronico*</label>
                     <input type="email" class="form-control" name="email" id="area de correo" placeholder="nombre@ejemplo.com" required>
                 </div>
     <!-- area de numero de telefono -->
                 <div class="col-12 mb-2">
-                    <label for="telefono" class="form-label">Teléfono 1 *</label>
+                    <label for="telefono" class="form-label">Teléfono*</label>
                     <input type="tel" class="form-control" name="tel" id="telefono" placeholder="123-456-7890" pattern="\d*" title="Solo se permiten números" required>
                 </div>
 
-                <div class="col-12 mb-2">
-                  <label for="telefono2" class="form-label">Teléfono 2</label>
-                  <input type="tel" class="form-control" name="tel2" id="telefono2" placeholder="123-456-7890" pattern="\d*" title="Solo se permiten números">
-              </div>
-
     <!-- area de datos personales texto-->
                 <div class="col-12 mb-2">
-                    <label for="nombre" class="form-label">Nombre *</label>
+                    <label for="nombre" class="form-label">Nombre*</label>
                     <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombre(s)" required>
                 </div>
     
                 <div class="col-5 form-check-inline">
-                    <label for="Apellido" class="form-label">Primer apellido *</label>
+                    <label for="Apellido" class="form-label">Primer apellido*</label>
                     <input type="text" class="form-control" name="apellido1" id="Apellido" placeholder="Tu apellido" required>
                 </div>
 
@@ -216,21 +211,21 @@
                 </div><br><br>
     <!-- area de radio -->
                 <div class="col-6 mb-2">
-                  <label for="radio" name="Sexo" class="from-check-label">Selecciona el sexo. *</label>
+                  <label for="radio" name="Sexo" class="from-check-label">Selecciona el sexo.</label>
                   <div class="from-check ">
-                    <input type="radio" name="Sexo" class="form-check-input" value="" id="radio1" required>
+                    <input type="radio" name="Sexo" class="form-check-input" value="Hombre" id="radio1" required>
                     <label for="radio1" class="from-check-label">Hombre</label>
                   </div>
                   <div class="from-check ">
-                    <input type="radio" name="Sexo" class="form-check-input" value="" id="radio2" required>
+                    <input type="radio" name="Sexo" class="form-check-input" value="Mujer" id="radio2" required>
                     <label for="radio2" class="from-check-label">Mujer</label>
                   </div>
                   <div class="from-check ">
-                    <input type="radio" name="Sexo" class="form-check-input" value="" id="radio3" required>
+                    <input type="radio" name="Sexo" class="form-check-input" value="Otro" id="radio3" required>
                     <label for="radio3" class="from-check-label">Otro</label>
                   </div>
                   <div class="from-check ">
-                    <input type="radio" name="Sexo" class="form-check-input" value="" id="radio4" required>
+                    <input type="radio" name="Sexo" class="form-check-input" value="Prefiero no decirlo" id="radio4" required>
                     <label for="radio4" class="from-check-label">Prefiero no decirlo</label>
                   </div>
                 </div><br>
@@ -239,7 +234,7 @@
               <h4 class="text-center ">Informacion de la empresa.</h4><br>
     <!-- area de texto localidad empresa-->
                 <div class="col-5 mb-2  form-check-inline">
-                    <label for="ciudad" class="form-label">Ciudad *</label>
+                    <label for="ciudad" class="form-label">Ciudad*</label>
                     <input class="form-control" list="lista" name="ciudad" placeholder="Agregar o Buscar..." required>
                     <datalist id="lista">
                       <option value="Ciudad de México"></option>
@@ -256,31 +251,31 @@
                 </div>
 
                 <div class="col-5 mb-2 form-check-inline">
-                    <label for="cp" class="form-label">Codigo Postal *</label>
+                    <label for="cp" class="form-label">Codigo Postal*</label>
                     <input type="text" class="form-control" name="cp" id="cp" placeholder="CP" required>
                 </div>
                 
                 <div class="col-5 mb-2 form-check-inline">
-                    <label for="select1">Que tipo de empresa es *</label>
+                    <label for="select1">Que tipo de empresa es*</label>
                     <select id="select1" name="tipoempre" class="form-select" required>
-                        <option value="1" selected disabled>No especificada</option>
-                        <option value="2">Empresa privada</option>
-                        <option value="3">Empresa Gubernamental</option>
+                        <option value="No especificada" selected disabled>No especificada</option>
+                        <option value="Empresa privada">Empresa privada</option>
+                        <option value="Empresa Gubernamental">Empresa Gubernamental</option>
                     </select>
                 </div>
 
                 <div class="col-4 form-check-inline"><!-- area del calendario -->
-                  <label for="fechaactual1" class="form-label">Fecha de visita. *</label>
-                  <input type="date" name="fecha de llenado" class="form-control" id="fechaacutal1" required>
+                  <label for="fecha" class="form-label">Fecha Actual.</label>
+                  <input type="date" name="fecha de llenado" class="form-control" id="fecha" readonly required>
                 </div>
 
                 <div class="col-12">
-                  <label for="nombreemp" class="form-label">Nombre de la empresa *</label>
+                  <label for="nombreemp" class="form-label">Nombre de la empresa*</label>
                   <input type="text" class="form-control" name="nameempre" id="nombreemp" placeholder="Nombre de empresa" required>
                 </div>
               
                 <div class="col-12">
-                    <label for="direccion" class="form-label">Direccion *</label>
+                    <label for="direccion" class="form-label">Direccion*</label>
                     <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Direccion" required>
                 </div><br>    
     <!-- area de texto largo -->
@@ -291,7 +286,7 @@
     <!-- area de envio -->
                 <div class="text-center">
                   <label for="enviar" class="form-label"></label>
-                  <button type="submit" id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
+                  <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
                   <label for="borrarcontenido" class="form-label"></label>
                   <button type="reset" id="borrarcontenido" class="btn btn-danger">Restaurar</button>
                 </div>
@@ -304,13 +299,15 @@
       
       <!--formato de la fecha-->
       <script>
-        // Función para establecer la fecha y hora actual en el campo de fecha de nacimiento
-        function establecerFechaActual() {
-          var fechaActual = new Date();
-          var fechaActualFormateada = fechaActual.toISOString().slice(0, 16); // Formato YYYY-MM-DDTHH:mm
-          $("#fechaactual1").val(fechaActualFormateada);
-        }
-      </script>
+        // Obtener el elemento del campo de fecha
+        var fechaInput = document.getElementById("fecha");
+
+        // Obtener la fecha actual en el formato YYYY-MM-DD
+        var fechaActual = new Date().toISOString().split("T")[0];
+
+        // Establecer la fecha actual como el valor predeterminado del campo de fecha
+        fechaInput.value = fechaActual;
+    </script>
 
       <!--esta es la validacion de la pagina-->
       <script>
